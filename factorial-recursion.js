@@ -22,6 +22,21 @@ n! = n * (n-1)!
 n! = n * (n-1)!
 */
 
+// const factorial = (n) => {
+//     if (n == 1)
+//     {
+//         return 1;
+//     }
+//     return n * factorial(n - 1);
+// };
+
+// const factNumber = 20;
+// const facts = factorial(factNumber);
+// console.log(facts);
+
+
+// again write the code 
+
 const factorial = (n) => {
     if (n == 1)
     {
@@ -30,6 +45,6 @@ const factorial = (n) => {
     return n * factorial(n - 1);
 };
 
-const factNumber = 2;
+const factNumber = 20;
 const facts = factorial(factNumber);
 console.log(facts);
