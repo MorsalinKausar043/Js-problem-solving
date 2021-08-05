@@ -9,7 +9,7 @@
 // console.log(first , second);
 
 
-// es 6 
+// es 6 desturing
 
 let first = 5;
 let second = 7;
