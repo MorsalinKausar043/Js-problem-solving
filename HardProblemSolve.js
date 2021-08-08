@@ -60,26 +60,51 @@
 // const bestFriendFunc = bestFriend(names);
 // console.log(bestFriendFunc);
 
-const bestFriend = (names) => {
+// const bestFriend = (names) => {
     
-    let largest = 0;
-    let logical;
+//     let largest = 0;
+//     let logical;
 
-    for (let name of names)
+//     for (let name of names)
+//     {
+//         let element = name;
+
+//         if (element.length > largest)
+//         {
+//             let largest = element.length;
+//             logical = element;
+//         }
+//     }
+
+//     return logical;
+// };
+
+// const names = ["morsalin kausar" , "jamalpur high school" , "jamalpur technical school"]
+
+// const bestFriendFunc = bestFriend(names);
+// console.log(bestFriendFunc);
+
+
+// show positive number 
+
+const onlyPositive = (number) => {
+
+    let positive = [];
+
+    for (let numbers of number)
     {
-        let element = name;
-
-        if (element.length > largest)
+        if (numbers  > 0)
         {
-            let largest = element.length;
-            logical = element;
+            positive.push(numbers);
+        } else
+        {
+            break;
         }
     }
 
-    return logical;
+    return positive;
 };
 
-const names = ["morsalin kausar" , "jamalpur high school" , "jamalpur technical school"]
-
-const bestFriendFunc = bestFriend(names);
-console.log(bestFriendFunc);
+const number = [2, 43, 5, 3, 5,-2,-5];
+const onlyPositives = onlyPositive(number)
+console.log(onlyPositives);
