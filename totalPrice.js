@@ -1,15 +1,15 @@
-const products = [
-    { name: 'laptop', price: 43000 },
-    { name: 'shirt', price: 500 },
-    { name: 'watch', price: 3680 },
-    { name: 'phone', price: 55000 }
-];
+// const products = [
+//     { name: 'laptop', price: 43000 },
+//     { name: 'shirt', price: 500 },
+//     { name: 'watch', price: 3680 },
+//     { name: 'phone', price: 55000 }
+// ];
 
-let totalPrice = 0;
+// let totalPrice = 0;
 
-for (const product of products) {
-    totalPrice = totalPrice + product.price;
-}
+// for (const product of products) {
+//     totalPrice = totalPrice + product.price;
+// }
 // console.log(totalPrice);
 
 const cart = [
@@ -18,6 +18,8 @@ const cart = [
     { name: 'watch', price: 3680, quantity: 3 },
     { name: 'phone', price: 55000, quantity: 1 }
 ];
+
+
 let cartTotal = 0;
 for (const product of cart) {
     console.log(product);
