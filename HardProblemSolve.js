@@ -34,6 +34,23 @@
 // const secondBook = 200;
 // const thirdBook = 300;
 
+const pageRequirement = (firstBook, secondBook, thirdBook) => {
+    
+    let firstBookPages = 100;
+    let secondBookPages = 200;
+    let thirdBookPages = 300;
+
+    let firstBooks = firstBook * firstBookPages;
+    let secondBooks = secondBook * secondBookPages;
+    let thirdBooks = thirdBook * thirdBookPages;
+
+    const total = firstBooks + secondBooks + thirdBooks;
+    return total;
+};
+
+const pageRequirementFunc = pageRequirement(1, 1, 1);
+console.log(pageRequirementFunc);
+
 // const pageRequirementFunc = pageRequirement(firstBook, secondBook, thirdBook);
 // console.log("page requirement for",pageRequirementFunc);
 
@@ -87,24 +104,24 @@
 
 // show positive number 
 
-const onlyPositive = (number) => {
+// const onlyPositive = (number) => {
 
-    let positive = [];
+//     let positive = [];
 
-    for (let numbers of number)
-    {
-        if (numbers  > 0)
-        {
-            positive.push(numbers);
-        } else
-        {
-            break;
-        }
-    }
+//     for (let numbers of number)
+//     {
+//         if (numbers  > 0)
+//         {
+//             positive.push(numbers);
+//         } else
+//         {
+//             break;
+//         }
+//     }
 
-    return positive;
-};
+//     return positive;
+// };
 
-const number = [2, 43, 5, 3, 5,-2,-5];
-const onlyPositives = onlyPositive(number)
-console.log(onlyPositives);
+// const number = [2, 43, 5, 3, 5,-2,-5];
+// const onlyPositives = onlyPositive(number)
+// console.log(onlyPositives);
