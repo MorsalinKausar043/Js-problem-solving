@@ -1,36 +1,32 @@
-// const fibonacci = (n) => {
-    
-//     if (n == 0)
-//     {
-//         return 0;
-//     }
-//     else if (n == 1)
-//     {
-//         return 1;
-//     }
-//     return fibonacci(n - 1) + fibonacci(n - 2);
+// for loop fibonacci
+
+// let fibo = [0, 1];
+
+// for (let i = 2; i <= 6; i++)
+// {
+//     fibo[i] = fibo[i-1] + fibo[i-2]
 // };
 
-// const fibos = fibonacci(8);
-// console.log(fibos);
+// console.log(fibo);
 
 
-// fibonacci searies 
+// fibonacci recursive
 
-const fibonacciSearies = (n) => {
+let fibo = (i) => {
     
-    if (n == 0)
+    if (i == 0)
     {
-        return [0];
+        return 0;
     }
-    else if (n == 1)
+    else if (i == 1)
     {
-        return [0, 1];
+        return 1;
+
+    } else
+    {
+        return fibo(i - 1) + fibo(i - 2);
     }
-    const fibo = fibonacciSearies(n - 1);
-    fibo[n] = fibo[n - 1] + fibo[n - 2];
-    return fibo;
 };
 
-const fibos = fibonacciSearies(8);
-console.log(fibos);
+console.log(fibo(7));
+
