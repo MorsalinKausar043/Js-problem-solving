@@ -120,6 +120,10 @@ function perfectFriend(names) {
             {
                 unique.push(name);
             }
+            else
+            {
+                return "5 chacrecter is none!"
+            }
         }
         else
         {
@@ -127,10 +131,10 @@ function perfectFriend(names) {
         }
     }
 
-    return unique.toString(); //used to string for the conver array to string
+    return unique[0]; //used to string for the conver array to string
 };
 
-const names = ["kausar", "jakir", "pranto", "dipus", "ayub"];
+const names = ["kausar", "jakir", "prant", "dipus", "ayub"];
 const perfectFriendFunc = perfectFriend(names);
 console.log(perfectFriendFunc);
 
